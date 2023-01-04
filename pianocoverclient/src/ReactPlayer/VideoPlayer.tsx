@@ -1,17 +1,17 @@
-import react from "react";
+import React from "react";
 import ReactPlayer from "react-player";
 
-export const VideoPlayer = () => {
+export const InitVideoPlayer = (url: string, key: number) => {
   return (
     <>
       <ReactPlayer
-        url="add video url here from public folder"
-        width="30%"
-        height="50%"
+        url={url}
+        width="100%"
         playing={false}
-        controls={true}
+        controls
+        key={key}
+        light="https://cdn.pixabay.com/photo/2016/11/21/17/39/piano-1846719_1280.jpg"
       />
-      ;
     </>
   );
 };
