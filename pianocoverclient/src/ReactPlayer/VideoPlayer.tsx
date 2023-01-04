@@ -1,17 +1,15 @@
-import react from "react";
+import React from "react";
 import ReactPlayer from "react-player";
 
-export const VideoPlayer = () => {
+export const InitVideoPlayer = (url: string) => {
   return (
     <>
       <ReactPlayer
-        url="add video url here from public folder"
-        width="30%"
-        height="50%"
+        url={url}
+        width="40%"
         playing={false}
         controls={true}
       />
-      ;
     </>
   );
 };
