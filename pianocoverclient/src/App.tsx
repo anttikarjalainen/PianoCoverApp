@@ -5,11 +5,11 @@ import { SideBar } from "./Sidebar/Sidebar";
 import { Carousel } from 'react-responsive-carousel';
 
 function App() {
-  const urls = ["1", "2"]
-  const renderVideoPlayers = urls.map((item) => {
-    const videoplayer = InitVideoPlayer(item)
-    return <div>
-      {videoplayer}
+  const urls = ["https://www.youtube.com/watch?v=nqmvMIZCkZ4", "https://www.youtube.com/watch?v=nqmvMIZCkZ4"]
+  const renderVideoPlayers = urls.map((item, i) => {
+    const videoplayer = InitVideoPlayer(item, i)
+    return <div>Vid: {i}
+    {videoplayer}
     </div>
   })
   return (
@@ -17,8 +17,8 @@ function App() {
       <div className="h-full overflow-auto">
         <SideBar />
         <div className="flex place-content-center mt-4">
-          <Carousel>
-            {renderVideoPlayers}
+          <Carousel  width={850}>
+           {renderVideoPlayers}
           </Carousel>
         </div>
       </div>
