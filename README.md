@@ -1,7 +1,7 @@
 # PianoCoverApp
 This project was bootstrapped with Create React App.
 
-This app uses both cra and vite. Vite makes the development more faster, and cra handles build for production
+This app uses both CRA 5 and Vite. Vite makes the development more faster, and CRA handles build for production.
 
 Technologies: CRA 5, Vite, TailwindCss, React-Player https://www.npmjs.com/package/react-player
 
